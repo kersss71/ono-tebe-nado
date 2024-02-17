@@ -10,8 +10,9 @@
 }
 
 .header__menu {
-  width: 391px;
+  width: 400px;
   height: 22px;
+  margin: 44px 36px 39px 26.52px;
 }
 
 .header__links-list-item_no-bullit {
@@ -43,8 +44,7 @@
 }
 
 .header__logo {
-  width: 148px;
-  margin: 0 184px 0 36px;
+  margin: 10px 184px 0 0;
 }
 
 .header__logo-image {
@@ -58,6 +58,7 @@
   height: 98px;
   font-style: normal;
   line-height: 1.35;
+  padding: 7px 0 0 4px;
 }
 
 .cover {
