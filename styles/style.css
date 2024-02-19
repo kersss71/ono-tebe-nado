@@ -40,7 +40,10 @@
   text-decoration: none;
   border-bottom: 1px solid #000;
   letter-spacing: 0.01em;
-  line-height: 1.35;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 135%;
+  color: #000;
 }
 
 .header__logo {
@@ -66,7 +69,7 @@
   z-index: -1;
   width: 1100px;
   height: 757px;
-  background-image: url(/dev/ono-tebe-nado/images/cover.jpg);
+  background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -269,4 +272,117 @@
   color: #000;
   text-decoration: none;
   border-bottom: 1px solid #000;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 146px 24px 0px 24px;
+}
+
+.about__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 240px;
+  height: 240px;
+  margin-left: 47px;
+  margin-top: 35px;
+  background-color: #000;
+  border-radius: 50%;
+}
+
+.about__logo-image {
+  width: 148px;
+  height: 114px;
+}
+
+.about__column {
+  margin-right: 25px;
+}
+
+.about__column-second {
+  grid-column: span 2;
+  margin: 133px 0 0 0;
+}
+
+.about__text {
+  width: 693px;
+  height: 312px;
+  margin-left: 11px;
+}
+
+.about__title {
+  margin-left: 9px;
+  margin-top: 5px;
+  margin-bottom: 100px;
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.about__text-paragraph {
+  width: 688px;
+  height: 120px;
+  margin-right: 5px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  color: #000;
+}
+
+.about__text_first-paragraph {
+  width: 693px;
+  letter-spacing: 0.01em;
+  margin-bottom: 24px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  width: 1000px;
+  height: 98px;
+  margin: 180px 50px 88px 50px;
+}
+
+.address-footer {
+  width: 240px;
+  height: 98px;
+  font-style: normal;
+  line-height: 1.35;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 135%;
+  color: #000;
+}
+
+.footer__menu-list {
+  list-style-type: none;
+  text-align: center;
+  font-weight: 400;
+  font-size: 18px;
+  color: #000;
+}
+
+.footer__menu-link {
+  text-decoration: none;
+  border-bottom: 1px solid black;
+}
+
+.footer__menu-link-active {
+  text-decoration: none;
+  border-bottom: none;
+}
+
+.footer__social-list {
+  display: flex;
+  justify-content: space-between;
+  width: 240px;
+  list-style-type: none;
+}
+
+.footer__social-link-item {
+  width: 48px;
+  height: 48px;
 }
