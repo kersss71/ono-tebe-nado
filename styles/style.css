@@ -12,7 +12,6 @@
 
 .header__menu {
   width: 400px;
-  height: 22px;
   margin: 7px 0 0 26px;
 }
 
@@ -118,18 +117,17 @@
 
 .text__left {
   text-align: left;
-  letter-spacing: 0.3em;
 }
 
 .text__center {
   text-align: center;
-  letter-spacing: 0.3em;
+
   line-height: 100%;
 }
 
 .text__right {
   text-align: right;
-  letter-spacing: 0.3em;
+
   line-height: 100%;
 }
 
@@ -167,7 +165,8 @@
   width: 256px;
   height: 51px;
   background: transparent;
-  border-color: white;
+  border: 1px solid #fff;
+  font-family: inherit;
   font-weight: 500;
   font-size: 22px;
   text-transform: uppercase;
@@ -177,11 +176,13 @@
 
 .lots {
   position: relative;
-  margin: 186px 24px 146px 24px;
+  margin: 180px 24px 146px 24px;
 }
 
 .lots__heading {
-  margin: -7px 0 27px 40px;
+  margin: 0 0 20px 40px;
+  padding-bottom: 6px;
+
   font-weight: 700;
   font-size: 40px;
   text-transform: uppercase;
@@ -216,6 +217,7 @@
 .card-link {
   display: block;
   height: 100%;
+  text-decoration: none;
 }
 
 .card {
@@ -234,7 +236,7 @@
 
 .card__title-text {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   font-weight: 700;
   font-size: 22px;
   line-height: 120%;
@@ -247,7 +249,7 @@
 
 .card__text {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   font-weight: 400;
   font-size: 20px;
   line-height: 120%;
@@ -260,9 +262,8 @@
 }
 
 .lots__look-more-text {
-  display: block;
+  display: inline-block;
   margin: 30px 0 0 40px;
-  width: 192px;
   font-weight: 400;
   font-size: 20px;
   color: #000;
@@ -304,7 +305,6 @@
 
 .about__text {
   width: 693px;
-  min-height: 312px;
   margin-left: 8px;
 }
 
@@ -320,17 +320,15 @@
 
 .about__text-paragraph {
   width: 688px;
-  min-height: 120px;
   margin-right: 5px;
+  letter-spacing: 0.01em;
   font-weight: 400;
   font-size: 20px;
   line-height: 120%;
   color: #000;
 }
 
-.about__text-paragraph-indent {
-  width: 693px;
-  letter-spacing: 0.01em;
+.about__text-paragraph:first-child {
   margin-bottom: 24px;
 }
 
@@ -338,13 +336,11 @@
   display: flex;
   justify-content: space-between;
   width: 1000px;
-  min-height: 98px;
   margin: 180px 50px 88px 50px;
 }
 
 .address-footer {
   width: 240px;
-  min-height: 98px;
   padding-top: 1px;
   font-style: normal;
   line-height: 1.35;
